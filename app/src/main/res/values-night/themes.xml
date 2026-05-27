@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com">
+    <style name="Theme.MyApplication" parent="Theme.AppCompat.NoActionBar">
+        <!-- Глубокий черный фон окна -->
+        <item name="android:windowBackground">#000000</item>
+
+        <!-- Принудительно черные системные панели -->
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:navigationBarColor">#000000</item>
+
+        <!-- Белые иконки системы (часы, кнопки назад/домой) на черном фоне -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+
+        <!-- Отключаем прозрачность, так как она вызывает серый налет (scrim) -->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+</resources>
